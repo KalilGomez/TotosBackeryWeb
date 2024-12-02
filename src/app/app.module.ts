@@ -9,20 +9,22 @@ import { LoginComponent } from './auth/login/login.component';
 import { NavComponent } from './comun/nav/nav.component';
 import { HomeComponent } from './page/home/home.component';
 import { AboutComponent } from './page/about/about.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent,
     NavComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [
     provideClientHydration(withEventReplay())
